@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha Interface</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="status_bar">
+            <div class="time">9:41</div>
+            <div class="signal">
+                <div class="wifi"></div>
+                <div class="battery"></div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="robot_icon">
+                <svg viewBox="0 0 24 24" width="48" height="48">
+                    <path d="M12 2a2 2 0 0 1 2 2v2h4a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4V4a2 2 0 0 1 2-2zm0 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+                </svg>
+            </div>
+            
+            <div class="header_content">
+                <h1>Prove you're not a robot!</h1>
+                <p>Tap the squares with numbers to prove that you are human!</p>
+                
+                <div class="progress_container">
+                    <div class="progress_bar"></div>
+                </div>
+            </div>
+            
+            <div class="grid">
+                <div class="square yellow" data-value="7">
+                    <div class="monster happy">
+                        <span class="number">7</span>
+                    </div>
+                </div>
+                <div class="square mint">
+                    <div class="monster cyclops"></div>
+                </div>
+                <div class="square orange" data-value="3">
+                    <div class="monster angry">
+                        <span class="number">3</span>
+                    </div>
+                </div>
+                
+                <div class="square blue">
+                    <div class="monster glasses"></div>
+                </div>
+                <div class="square pink" data-value="5">
+                    <div class="monster crown">
+                        <span class="number">5</span>
+                    </div>
+                </div>
+                <div class="square pale_yellow">
+                    <div class="monster basic"></div>
+                </div>
+                
+                <div class="square orange_dark" data-value="9">
+                    <div class="monster mustache">
+                        <span class="number">9</span>
+                    </div>
+                </div>
+                <div class="square purple">
+                    <div class="monster ghost"></div>
+                </div>
+                <div class="square light_blue" data-value="2">
+                    <div class="monster cookie">
+                        <span class="number">2</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="action_container">
+                <button class="submit_button" disabled>Verify</button>
+                <div class="result_message"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
